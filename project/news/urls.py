@@ -3,6 +3,6 @@ from .views import index, detail
 
 
 urlpatterns = [
-    path('news_list/', index, name='index'),
+    path('', index, name='index'),
     path('new/<str:slug>', detail, name='detail'),
 ]

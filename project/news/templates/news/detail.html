@@ -1,6 +1,6 @@
 {% extends 'index.html' %}
 
 {% block title %}
-<p>{{ new.title }} : {{ new.date_pub }}</p>
-<p>{{ new.Text }} </p>
+<p>{{ new.title }} : {{ new.date_pub }} {% now "SHORT_DATETIME_FORMAT" %}</p>
+<p>{{ new.text }} </p>
 {% endblock %}

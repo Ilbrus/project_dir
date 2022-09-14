@@ -4,7 +4,7 @@ from django.shortcuts import reverse
 # Create your models here.
 class New(models.Model):
     title = models.CharField(max_length=64)
-    Text = models.TextField()
+    text = models.TextField()
     date_pub = models.DateTimeField(auto_now_add=True)
     slug = models.SlugField(max_length=128, unique=True)
     
